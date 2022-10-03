@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(24, 24, 24, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.header div {
+    flex: 1;
+}
+
+.header div:first-child {
+    padding: 5px 0px 5px 80px;
+}
+
+.header div:last-child {
+    padding: 15px 80px 15px 0px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #0094FF;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: #084579;
+}
+
+.number {
+    float: right;
+    text-decoration: none;
+    color: #0094FF;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.number:hover {
+    color: #084579;
+}
+
+.number i {
+    padding-right: 10px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    height: 600px;
+    transition: 0.3s;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.heading {
+    font-size: 50px;
+    padding: 150px 0px 20px 80px;
+    color: #0094FF;
+}
+
+.para {
+    font-size: 15px;
+    padding: 0px 0px 20px 80px;
+    color: gray;
+}
+
+.contact-now {
+    width: fit-content;
+    margin: 0px 0px 0px 80px;
+}
+
+.contact-now button {
+    height: 50px;
+    width: fit-content;
+    padding: 0px 50px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    background-color: #0094FF;
+    color: #FFF;
+    box-shadow: 2px 4px 10px rgba(5, 5, 5, 0.25);
+    transition: all 0.3s ease;
+}
+
+.contact-now button:hover {
+    background-color: #084579;
+    color: #FFF;
+}
+
+.dekstop-hero-image {
+    float: right;
+}
+
+.mobile-hero-image {
+    display: none;
+}
+
+.list-sec {
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+}
+
+.list-heading {
+    color: #084579;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+}
+
+.list-hr {
+    border: none;
+    background-color: #084579;
+    height: 2px;
+    width: 80px;
+    margin: 0px auto 50px auto;
+    border-radius: 10px;
+}
+
+.list-all-columns {
+    width: 90%;
+    margin: 0px auto 200px auto;
+}
+
+.list-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.list-column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    padding: 10px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.list-column:first-child {
+    margin-left: 0;
+}
+
+.list-div {
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.list-div:hover {
+    background-color: #084579;
+}
+
+.list-div:hover p:first-child {
+    color: #FFF;
+}
+
+.list-div:hover p:last-child {
+    color: #FFF;
+}
+
+.list-div p:first-child {
+    color: #0094FF;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+}
+
+.list-div p:last-child {
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.about-sec {
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+}
+
+.about-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.about-column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.about-column:first-child {
+    margin-left: 0;
+}
+
+.about-column:last-child {
+    padding: 0px 20px;
+}
+
+.about-photo-all-div {
+    height: fit-content;
+    width: fit-content;
+    margin: 50px auto 200px auto;
+}
+
+.about-img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.about-img:hover {
+    transform: scale(1.2);
+}
+
+.about-top-heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding: 50px 0px 10px 0px;
+}
+
+.about-heading {
+    font-size: 25px;
+    color: #084579;
+    padding: 0px 0px 15px 0px;
+}
+
+.about-para {
+    font-size: 15px;
+    color: gray;
+}
+
+.dental-testimonial-sec {
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+}
+
+.dental-testimonial-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.dental-testimonial-column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.dental-testimonial-column:first-child {
+    margin-left: 0;
+    padding: 0px 30px 0px 80px;
+}
+
+.dental-testimonial-top-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding: 50px 0px 10px 0px;
+}
+
+.dental-testimonial-title {
+    font-size: 25px;
+    color: #084579;
+    padding: 0px 0px 15px 0px;
+}
+
+.dental-testimonial-para {
+    font-size: 15px;
+    color: gray;
+}
+
+.dental-testimonial-all-de-div {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.dental-testimonial-de-div {
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0px;
+    padding: 15px;
+    background-color: #FFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dental-testimonial-de-div:last-child {
+    margin-bottom: 200px;
+}
+
+.dental-testimonial-de-div:hover {
+    background-color: #084579;
+}
+
+.dental-testimonial-de-div:hover div:first-child {
+    color: #FFF;
+}
+
+.dental-testimonial-de-div:hover div:last-child .image img {
+    border-color: #FFF;
+}
+
+.dental-testimonial-de-div:hover div:last-child .name p {
+    color: #FFF;
+}
+
+.dental-testimonial-de-div div:first-child {
+    color: gray;
+    font-size: 15px;
+    padding: 20px 0px;
+    transition: all 0.3s ease;
+}
+
+.dental-testimonial-de-div div:last-child {
+    display: flex;
+}
+
+.dental-testimonial-de-div div:last-child .image {
+    padding: 0px;
+}
+
+.dental-testimonial-de-div div:last-child .name {
+    padding: 15px;
+}
+
+.dental-testimonial-de-div div:last-child .image img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border: 2px solid #0094FF;
+    border-radius: 100px;
+    padding: 2px;
+    transition: all 0.3s ease;
+}
+
+.dental-testimonial-de-div div:last-child .name p {
+    color: #0094FF;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.case-studies-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.case-studies-column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.case-studies-column:first-child {
+    margin-left: 0;
+}
+
+.case-studies-img {
+    display: block;
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 50px auto 200px auto;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.case-studies-img:hover {
+    transform: scale(1.2);
+}
+
+.case-studies-top-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding: 50px 0px 10px 30px;
+}
+
+.case-studies-title {
+    font-size: 25px;
+    color: #084579;
+    padding: 0px 0px 15px 30px;
+}
+
+.case-studies-para {
+    font-size: 15px;
+    color: gray;
+    padding: 0px 50px 0px 30px;
+}
+
+.contact-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0;
+}
+
+.contact-column {
+    flex: 1;
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.contact-column:first-child {
+    margin-left: 0;
+}
+
+.contact-top-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding: 50px 0px 10px 80px;
+}
+
+.contact-title {
+    font-size: 25px;
+    color: #084579;
+    padding: 0px 0px 15px 80px;
+}
+
+.contact-para {
+    font-size: 15px;
+    color: gray;
+    padding: 0px 0px 0px 80px;
+}
+
+.contact-form {
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 80%;
+    margin: 50px auto 100px auto;
+    padding: 50px 30px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    background-color: #084579;
+}
+
+.contact-form:hover .contact-name {
+    background-color: transparent;
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.contact-form:hover .contact-name::placeholder {
+    color: #FFF;
+}
+
+.contact-form:hover .contact-email {
+    background-color: transparent;
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.contact-form:hover .contact-email::placeholder {
+    color: #FFF;
+}
+
+.contact-form:hover .contact-message {
+    background-color: transparent;
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.contact-form:hover .contact-message::placeholder {
+    color: #FFF;
+}
+
+.contact-name,
+.contact-email,
+.contact-message {
+    height: fit-content;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #0094FF;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-name {
+    margin-bottom: 20px;
+}
+
+.contact-message {
+    height: 120px;
+    margin-top: 20px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.contact-submit {
+    height: 40px;
+    width: 120px;
+    display: block;
+    margin: 30px auto 0px auto;
+    background-color: #0094FF;
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-submit:hover {
+    background-color: #FFF;
+    color: #084579;
+}
+
+.footer-sec {
+    /*border: 1px solid red;*//*Border Color For Understand Div*/
+    background-color: #FFF;
+    padding: 10px 0px;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.footer-social-icon {
+    width: fit-content;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.footer-social-icon a {
+    text-decoration: none;
+    color: #0094FF;
+    transition: all 0.3s ease;
+}
+
+.footer-social-icon a:hover {
+    color: #084579;
+}
+
+.footer-social-icon a i {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.footer-hr-tag {
+    border: none;
+    height: 1px;
+    width: 90%;
+    background-color: #0094FF;
+    margin: auto;
+}
+
+.footer-copyright {
+    padding: 20px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    font-size: 15px;
+    color: #0094FF;
+}
+
+.footer-copyright p a {
+    text-decoration: none;
+    color: #0094FF;
+    transition: all 0.3s ease;
+}
+
+.footer-copyright p a:hover {
+    color: #084579;
+}
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .columns .column:last-child {
+        flex-basis: 100;
+        margin: 0;
+        height: auto;
+    }
+    .columns .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .dekstop-hero-image {
+        display: none;
+    }
+    .mobile-hero-image {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+    }
+    .list-columns .list-column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .list-columns .list-column:last-child {
+        flex-basis: 100;
+        margin: 0;
+    }
+    .list-columns .list-column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .about-columns .about-column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .about-columns .about-column:last-child {
+        flex-basis: 100;
+        margin: 0;
+    }
+    .about-columns .about-column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .dental-testimonial-columns .dental-testimonial-column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .dental-testimonial-columns .dental-testimonial-column:last-child {
+        flex-basis: 100;
+        margin: 0;
+    }
+    .dental-testimonial-columns .dental-testimonial-column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .case-studies-columns .case-studies-column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .case-studies-columns .case-studies-column:last-child {
+        flex-basis: 100;
+        margin: 0;
+    }
+    .case-studies-columns .case-studies-column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .case-studies-img {
+        width: 300px;
+    }
+    .contact-columns .contact-column {
+        margin-bottom: 0px;
+        flex-basis: 50%;
+    }
+    .contact-columns .contact-column:last-child {
+        flex-basis: 100;
+        margin: 0;
+    }
+    .contact-columns .contact-column:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        height: fit-content;
+    }
+    .header div {
+        flex-basis: 100%;
+    }
+    .header div:first-child {
+        padding: 10px 0px 5px 0px;
+    }
+    .header div:last-child {
+        padding: 15px 0px 15px 0px;
+    }
+    .logo {
+        display: block;
+        text-align: center;
+    }
+    .number {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .columns .column:first-child {
+        height: fit-content;
+        padding: 0px 20px 50px 20px;
+    }
+    .heading {
+        padding: 150px 0px 20px 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .para {
+        padding: 0px 0px 50px 0px;
+        text-align: center;
+    }
+    .contact-now {
+        text-decoration: none;
+        display: block;
+        margin: 0px auto;
+    }
+    .list-all-columns {
+        margin: 0px auto 30px;
+    }
+    .list-columns .list-column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .about-columns .about-column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .about-photo-all-div {
+        margin: 50px auto 50px;
+    }
+    .about-photo-all-div .about-img:nth-child(4),
+    .about-photo-all-div .about-img:nth-child(3),
+    .about-photo-all-div .about-img:nth-child(2),
+    .about-photo-all-div .about-img:nth-child(1),
+    .about-photo-all-div br {
+        display: none;
+    }
+    .about-photo-all-div .about-img {
+        display: block;
+        margin: auto;
+        height: 70%;
+        width: 70%;
+    }
+    .about-top-heading,
+    .about-heading,
+    .about-para {
+        text-align: center;
+    }
+    .about-para {
+        padding-bottom: 50px;
+    }
+    .dental-testimonial-columns .dental-testimonial-column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .dental-testimonial-column:first-child {
+        padding: 0px 20px 50px;
+    }
+    .dental-testimonial-de-div:last-child {
+        margin-bottom: 50px;
+    }
+    .dental-testimonial-top-title,
+    .dental-testimonial-title,
+    .dental-testimonial-para {
+        text-align: center;
+    }
+    .case-studies-columns .case-studies-column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .case-studies-img {
+        width: 70%;
+        margin: 50px auto 50px auto;
+    }
+    .case-studies-top-title,
+    .case-studies-title,
+    .case-studies-para {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .case-studies-top-title {
+        padding-top: 50px;
+    }
+    .case-studies-para {
+        padding-bottom: 50px;
+    }
+    .contact-columns .contact-column {
+        flex-basis: 100%;
+        margin: 0 0 0px;
+    }
+    .contact-top-title,
+    .contact-title,
+    .contact-para {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact-para {
+        padding-bottom: 50px;
+    }
+}
